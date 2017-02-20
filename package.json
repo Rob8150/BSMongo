@@ -1,0 +1,23 @@
+{
+  "name": "bsmongo",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Bootstrap Mongo Crud",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Mongo",
+    "Bootstrap"
+  ],
+  "author": "Robert Clark",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.8.3",
+    "parseurl": "^1.3.1"
+  }
+}

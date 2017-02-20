@@ -1,0 +1,76 @@
+
+https://www.youtube.com/watch?v=xDCKcNBFsuI&t=250s
+40:40 in
+mkdir tut
+
+cd tut
+
+npm init
+[add line below to package.json]
+
+"private": "true",
+
+"main": "app.js",
+
+npm install --save express
+
+npm install --save express-handlebars
+
+
+--app.js
+
+var express = require('express');
+
+var app = express();
+
+app.set('port', process.env.PORT || 3000);
+
+app.get('/', function(req, res){
+	res.send('Express Works');
+});
+
+app.listen(app.get('port'), function(){
+	console.log('Express started Ctrl-C to terminate');
+});
+
+>> node app.js
+
+browse to http://localhost:3000/
+
+Ctrl-C
+
+mkdir public
+mkdir public/img
+mkdir public/css
+mkdir public/js
+mkdir views
+mkdir views/layouts
+mkdir views/partials
+
+
+sudo app-get install git     (ONCE ONLY)
+git config --global user.email "robert.clark.1967@gmail.com"
+git config --global user.name "Robert Clark"
+
+git init
+git add -A
+git commit -m "Initial commit"
+
+[for processing forms]
+npm install --save body-parser
+
+[user can upload files]
+npm install --save formidable
+
+[handle cookies]
+npm install --save cookie-parser
+
+[session]
+npm install --save express-session
+
+[parseurl]
+npm install --save parseurl
+
+[file System]
+npm install --save fs
+
